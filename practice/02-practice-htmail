@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TechJourney | My Website</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f7fb;
+        color: #222;
+      }
+
+      header {
+        background-color: #102a43;
+        color: white;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      header h2 {
+        color: #38bdf8;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 18px;
+      }
+
+      nav a:hover {
+        color: #38bdf8;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 90px 20px;
+        background: linear-gradient(135deg, #102a43, #2563eb);
+        color: white;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        margin-bottom: 25px;
+      }
+
+      .button {
+        display: inline-block;
+        background-color: #38bdf8;
+        color: #102a43;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+
+      .button:hover {
+        background-color: white;
+      }
+
+      section {
+        padding: 55px 8%;
+        text-align: center;
+      }
+
+      section h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #102a43;
+      }
+
+      .skills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 25px;
+      }
+
+      .skill-card {
+        background: white;
+        padding: 25px;
+        width: 220px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px #00000010;
+      }
+
+      .skill-card h3 {
+        color: #2563eb;
+        margin-bottom: 10px;
+      }
+
+      #contact {
+        background-color: #e2eaf4;
+      }
+
+      footer {
+        background-color: #102a43;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          flex-direction: column;
+        }
+
+        nav a {
+          margin: 0 6px;
+        }
+
+        .hero h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header>
+      <h2>TechJourney</h2>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Welcome section -->
+    <main>
+      <section class="hero" id="home">
+        <h1>Welcome to My Website</h1>
+
+        <p>
+          Hello!, Everyone! Welcome to TechJourney your learning platform
+          for technology, programming, and cybersecurity. Explore our available
+          courses, develop new skills, and take the next step in your technology
+          journey. Register on our website todayto discover our courses and
+          start learning!
+        </p>
+
+        <a href="#about" class="button">Learn About Me</a>
+      </section>
+
+      <!-- About section -->
+      <section id="about">
+        <h2>About TechJourney</h2>
+
+        <p>
+          We are passionate about Information Technology, web development, Python programming, and cybersecurity. We are committed to expanding our technical knowledge, developing practical skills, and staying up to date with emerging technologies.
+
+Our mission is to empower learners with valuable technical knowledge, encourage continuous learning, solve real-world challenges, and build secure, innovative, and effective digital solutions.
+        </p>
+      </section>
+
+      <!-- Skills section -->
+      <section id="skills">
+        <h2>We Teach You New Skills</h2>
+
+        <div class="skills">
+          <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Building the structure of websitesusing
+        HTML (HyperText Markup Language). Understand headings,
+        paragraphs, images, links, lists, tables, and forms.
+        Discover how to use semantic elements to organize
+        web pages and create accessible content.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Python</h3>
+            <p>Learn Python programming from the basics to more advanced
+        concepts. Understand variables, data types, loops,
+        conditions, functions, and data structures. Develop
+        problem-solving skills, write reusable Python code,
+        automate repetitive tasks, work with files, and explore
+        data analysis and application development through
+        practical projects..</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Cybersecurity</h3>
+            <p> Learn how to protect computer systems, secure networks,
+        and keep sensitive data safe from cyber threats.
+        Explore online safety, passwords and authentication,
+        malware prevention, network security, and common
+        cyberattacks. Develop an understanding of security
+        best practices, identify potential risks, and learn
+        how to help protect digital information.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Thank you for visiting TechJourney!</p>
+
+        <p> Have questions about our courses?
+             Get in touch with us! </p>
+             <div class="contact-info">
+        <p><strong>Name:</strong> TechJourney</p>
+        <p><strong>Address:</strong> Your Address</p>
+        <p><strong>Email:</strong>
+            <a href="mailto:your-email@example.com">
+                your-email@example.com
+            </a>
+        </p>
+        <p><strong>Phone:</strong>
+            <a href="tel:+441234567890">
+                +44 1234 567890
+            </a>
+        </p>
+    </div>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechJourney | Education Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #18233b;
+            background: #f5f7fc;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 7%;
+            background: #2457d6;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .layout {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .intro h1 {
+            font-size: 45px;
+            line-height: 1.15;
+            margin: 20px 0;
+        }
+
+        .intro p {
+            color: #596780;
+            line-height: 1.8;
+        }
+
+        .benefits {
+            margin-top: 30px;
+        }
+
+        .benefits p {
+            background: #e3ebff;
+            padding: 14px;
+            border-radius: 8px;
+        }
+
+        .form-card {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 10px 35px #18233b15;
+        }
+
+        .form-card h2 {
+            margin-top: 0;
+        }
+
+        .subtext {
+            color: #68748a;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .full {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #d6ddea;
+            border-radius: 8px;
+            font: inherit;
+            font-size: 14px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: 2px solid #2457d6;
+            border-color: #2457d6;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .consent {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 22px 0;
+            font-size: 12px;
+            line-height: 1.6;
+            color: #596780;
+        }
+
+        .consent input {
+            width: auto;
+            margin-top: 3px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 9px;
+            background: #2457d6;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #173fa8;
+        }
+
+        .notice {
+            display: none;
+            padding: 15px;
+            margin-top: 18px;
+            border-radius: 8px;
+            background: #e5f7eb;
+            color: #17633b;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .notice.show {
+            display: block;
+        }
+
+        .privacy {
+            color: #68748a;
+            text-align: center;
+            font-size: 11px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: #0f172a;
+            color: white;
+            font-size: 13px;
+        }
+
+        @media (max-width: 760px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .intro {
+                text-align: center;
+            }
+
+            .intro h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .full {
+                grid-column: auto;
+            }
+
+            .form-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">TechJourney</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            &nbsp;&nbsp;
+            <a href="#enrol">Register</a>
+        </nav>
+    </header>
+
+    <main class="layout" id="home">
+
+        <section class="intro">
+            <h1>Learn Skills.<br>Build Your Future.</h1>
+
+            <p>
+                Welcome to TechJourney! Discover technology courses,
+                develop practical skills, and take the next step
+                towards your future in technology.
+            </p>
+
+            <div class="benefits">
+                <p>
+                    <strong>✓ Practical learning</strong><br>
+                    Develop skills through hands-on projects.
+                </p>
+
+                <p>
+                    <strong>✓ Courses for everyone</strong><br>
+                    Explore web development, Python, and cybersecurity.
+                </p>
+
+                <p>
+                    <strong>✓ Start at your level</strong><br>
+                    Choose a learning path that suits your experience.
+                </p>
+            </div>
+        </section>
+
+        <section class="form-card" id="enrol">
+            <h2>Student Registration Form</h2>
+
+            <p class="subtext">
+                Complete the form to tell us about yourself
+                and choose the course you would like to learn.
+                Fields marked * are required.
+            </p>
+
+            <form id="educationForm">
+
+                <div class="form-grid">
+
+                    <div class="field">
+                        <label for="firstName">First Name *</label>
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Enter your first name"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="lastName">Last Name *</label>
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Enter your last name"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </div>
+
+                    <div class="field full">
+                        <label for="email">Email Address *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter phone number"
+                            autocomplete="tel"
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="level">Learning Level *</label>
+                        <select id="level" name="level" required>
+                            <option value="" disabled selected>
+                                Select your level
+                            </option>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Some experience">
+                                Some experience
+                            </option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="field full">
+                        <label for="course">Choose a Course *</label>
+                        <select id="course" name="course" required>
+                            <option value="" disabled selected>
+                                Select a course
+                            </option>
+                            <option value="Full-Stack Web Development">
+                                Full-Stack Web Development
+                            </option>
+                            <option value="HTML and CSS">HTML and CSS</option>
+                            <option value="JavaScript and React">
+                                JavaScript and React
+                            </option>
+                            <option value="Python Programming">
+                                Python Programming
+                            </option>
+                            <option value="Cybersecurity">
+                                Cybersecurity
+                            </option>
+                            <option value="Cloud Computing">
+                                Cloud Computing
+                            </option>
+                            <option value="Not sure yet">
+                                I need help choosing
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="field full">
+                        <label for="goals">Your Learning Goals</label>
+                        <textarea
+                            id="goals"
+                            name="goals"
+                            placeholder="What would you like to achieve?"
+                        ></textarea>
+                    </div>
+
+                </div>
+
+                <label class="consent">
+                    <input type="checkbox" id="consent" required>
+                    <span>
+                        I agree that TechJourney may use the information
+                        I provide to respond to my enquiry. *
+                    </span>
+                </label>
+
+                <button type="submit">Submit Registration →</button>
+
+                <div
+                    class="notice"
+                    id="notice"
+                    role="status"
+                    aria-live="polite"
+                ></div>
+
+                <p class="privacy">
+                    Demonstration form. Your information is not sent
+                    to a server or stored by this page.
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechJourney. Learn something new every day.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("educationForm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const firstName =
+                document.getElementById("firstName").value.trim();
+
+            const course =
+                document.getElementById("course").value;
+
+            const notice =
+                document.getElementById("notice");
+
+            notice.textContent =
+                "Thank you, " + firstName +
+                "! Your registration form is complete. " +
+                "You selected " + course +
+                ". This demonstration does not send your details to a server.";
+
+            notice.classList.add("show");
+        });
+    </script>
+
+</body>
+</html>
+
+</section>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 TechJourney | My First Website</p>
+    </footer>
+  </body>
+</html>
